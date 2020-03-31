@@ -8,14 +8,14 @@ $green: #00ff00;
 $big: 30px;
 $regular: 20px;
 $small: 10px;
-$main-color:$blue
-$main-size:$regular
+$main-color: $blue;
+$main-size: $regular;
 ```
 Variables can be used to style elements, classes or ids. See example below:
 ```
 h1{
   font-size: $big;
-  color: $main
+  color: $main;
 }
 p{
   color: $green;
