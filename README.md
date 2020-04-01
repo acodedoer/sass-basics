@@ -59,3 +59,46 @@ The ampersand symbol in Sass can be used when nesting to refer to the parent sel
   }
 }
 ```
+## Math Operations
+Math operations such as addition, subtraction, multiplication and division can be performed using sass. Care should be taken not to mix units, or misuse subtraction as a hypen to form. Example of math operations in sass can be seen below:
+```
+$fontsize: 20px;
+
+p{
+  font-size: $fontsize;
+}
+
+h1{
+  font-size: $fontsize * 2;
+}
+
+h2{
+  font-size: $fontsize * 1.5;
+}
+
+li{
+  font-size: $fontsize - 5;
+}
+
+.innercontainer{
+  p{
+    font-size: $fontsize/1.2;
+    margin-top: (20px)/2;
+  }
+}
+```
+## Color Functions
+Sass provides functions that can be used to get, set and manipulate colors. These functions are easy to use and can be very useful. A fulllist of these functions can be found [here](https://sass-lang.com/documentation/modules/color). And an example of their use is shown below:
+```
+$main: #1111AA;
+$fontsize: 20px;
+
+h1{
+  background-color: $main;
+  font-size: $fontsize * 2;
+  &:hover{
+    background-color:lighten($main, 50%);
+  }
+}
+```
+
