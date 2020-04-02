@@ -101,4 +101,18 @@ h1{
   }
 }
 ```
+## Lists
+Lists are structures that Sass uses to store values in css declarations separated by either space or commas. A list can be passed as a value in Sass or an element of the lsits. An example of how lists can be used is shown below:
+```
+$main: #1111AA;
+$mylist: 10px 0 10px 0;
+
+div{
+  background-color: lighten($main, 50%);
+  border-radius: $mylist;
+  padding: nth($mylist, 1);
+}
+```
+In Sass the first element of a list has index 1, not 0 as in most programming languages.
+
 
